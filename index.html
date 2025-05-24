@@ -30,7 +30,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header class="header">
       <div class="header__content">
@@ -293,48 +292,21 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Feel free to Contact me by submitting the form below and I will get
+            Feel free to Contact me by mailing me or reach out to my any social media accounts and I will get
             back to you as soon as possible
           </span>
         </h2>
-        <div class="contact__form-container">
-          <form class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label">About</label>
-              <input
-                required
-                placeholder="Message About"
-                class="contact__form-input"
-                name="about"
-                id="about"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn" id="mailredirection">
-              Submit
-            </button>
+        <div class="contact__form-container" style="max-width: 40rem;">
+          <form class='contact__form'>
+            <div class="skills__skill">Email Me : Shethuday505@gmail.com</div>
+            <div id="status"></div>
+              <button type="button" class="btn btn--theme contact__btn" id="copymailid" style="width: 50%;
+                padding: 1rem 2rem; font-size: 1.6rem; margin-right: 80px;">
+                Copy Mail-Id
+              </button>
+              <div id="notify" style="display:none; position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:8px 16px; border-radius:4px; font-size:14px;">
+                Copied!
+              </div>
             <script src="mail.js"></script>
           </form>
         </div>
