@@ -200,7 +200,6 @@ header.top {
   cursor: pointer;
 }
 
-
 /* Responsive Mobile Header & Dropdown Override */
 
 @media (max-width: 768px) {
@@ -208,6 +207,9 @@ header.top {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    /* 🚀 CRITICAL: Force the header container ABOVE the grid-overlay (z-index: 2) */
+    position: relative !important;
+    z-index: 99999 !important; 
   }
 
   header.top,
@@ -220,12 +222,13 @@ header.top {
     gap: 0;
   }
 
+  /* Keep your toggles accessible and cleanly placed on the far top layer */
   .scheme-btn {
     position: absolute;
     right: 55px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 110;
+    z-index: 100005 !important;
   }
 
   .menu-toggle {
@@ -234,11 +237,12 @@ header.top {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 110;
+    z-index: 100005 !important;
   }
 
+  /* Clean up dropdown configurations to explicitly fire user gestures */
   .nav-container {
-    display: none;
+    display: none !important; /* Hide by default */
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -249,10 +253,16 @@ header.top {
     text-align: center;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+    /* 🎯 Layer it beautifully over sections & layouts */
+    z-index: 100000 !important;
+    pointer-events: auto !important; /* Forces interactive allowance */
   }
 
+  /* Explicitly handle state overrides cleanly */
   .nav-container.is-active {
-    display: flex;
+    display: flex !important;
+    pointer-events: auto !important;
   }
 
   .top .links,
@@ -260,6 +270,13 @@ header.top {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    pointer-events: auto !important; /* Ensure children handle touches smoothly */
+  }
+
+  .top__link,
+  .top__cv-btn,
+  .top__cta {
+    pointer-events: auto !important; /* Forces link clickable state inheritance */
   }
 
   .top__cv-btn {
@@ -268,14 +285,15 @@ header.top {
     padding: 12px;
   }
 
+  /* 🌓 Dynamic theme-based background modifications */
   body.scheme-midnight .nav-container {
-    background-color: #191b1d;
+    background-color: #191b1d !important;
     border: 1px solid #3a3b3e;
   }
 
   body.scheme-daylight .nav-container {
-    background-color: #eaeae0;
-    border: 1px solid #ccc;
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0;
   }
 }
 
