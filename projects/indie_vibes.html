@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Indie Vibes — Music Streaming Web App | Uday Sheth</title>
+    <meta
+      name="description"
+      content="A full-stack custom audio playback stream architecture engine engineered utilizing dynamic PHP and relational database storage."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:title" content="Indie Vibes — Music Streaming Web App" />
+    <meta property="og:description" content="Stream audio assets, configure user-managed playlists, and manage artist profiles seamlessly." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../assets/css/colors.css?v=0.8" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=0.8" />
+    
+    <style>
+      .project-header { padding-top: 140px; padding-bottom: 40px; }
+      .project-back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 500; margin-bottom: 24px; opacity: 0.7; transition: opacity 0.2s ease; }
+      .project-back-link:hover { opacity: 1; }
+      .project-main-title { font-size: 3.5rem; font-weight: 850; letter-spacing: -0.04em; line-height: 1.0; margin-bottom: 20px; }
+      .project-meta-strip { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 40px; }
+      .project-content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; padding-bottom: 100px; }
+      .project-body h2 { font-size: 1.8rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px; letter-spacing: -0.02em; }
+      .project-body p { font-size: 1.1rem; line-height: 1.65; margin-bottom: 20px; opacity: 0.9; }
+      .project-body ul { list-style: none; margin-bottom: 30px; }
+      .project-body ul li { position: relative; padding-left: 24px; font-size: 1.05rem; line-height: 1.6; margin-bottom: 12px; }
+      .project-body ul li::before { content: "✓"; position: absolute; left: 0; top: 0; font-weight: bold; }
+      .sidebar-box { border: 1px solid; border-radius: 16px; padding: 30px; position: sticky; top: 40px; }
+      .sidebar-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+      .action-stack { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+      .action-stack a { display: block; text-align: center; padding: 12px; border: 1px solid; border-radius: 999px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; }
+      body.scheme-midnight .sidebar-box { border-color: #3a3b3e; background: #191b1d; }
+      body.scheme-daylight .sidebar-box { border-color: #ccc; background: #eaeae0; }
+      body.scheme-midnight .project-body ul li::before { color: #c9a84c; }
+      body.scheme-daylight .project-body ul li::before { color: #a07828; }
+      @media (max-width: 768px) { .project-header { padding-top: 100px; } .project-main-title { font-size: 2.5rem; } .project-content-grid { grid-template-columns: 1fr; gap: 40px; } }
+    </style>
+  </head>
+
+  <body class="scheme-midnight">
+    <header class="top">
+      <div class="top__left">
+        <a href="../"><span class="top__brand">Uday Sheth</span></a>
+      </div>
+      <nav class="top__right">
+        <div class="nav-container" id="navContainer">
+          <div class="links">
+            <a href="../#projects" class="top__link">Work</a>
+            <a href="../#experience" class="top__link">Experience</a>
+          </div>
+          <div class="top__actions">
+            <a href="../assets/pdf/Uday-Sheth-CV.pdf" download class="top__cv-btn">📄 CV</a>
+          </div>
+        </div>
+        <button class="scheme-btn" id="schemeBtn">🌕</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </nav>
+    </header>
+
+    <section class="project-header">
+      <div class="boxed">
+        <a href="../#projects" class="project-back-link">← Back to Portfolio</a>
+        <h1 class="project-main-title">📀 Indie Vibes</h1>
+        <div class="project-meta-strip">
+          <span class="proj-badge">Full Stack Solution</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="boxed project-content-grid">
+        <div class="project-body">
+          <h2>Overview</h2>
+          <p>
+            INDIE-VIBES is a clean, custom full-stack musical web application ecosystem featuring complete account authentication, media streaming engines, and artist data architecture.
+          </p>
+          <h2>Capabilities & Workflows</h2>
+          <ul>
+            <li><strong>Dynamic Media Controls:</strong> Built audio streaming listeners equipped with random playlist generation, skips, and volume nodes.</li>
+            <li><strong>Relational Asset Matrix:</strong> Created localized storage solutions handling database tables for users, tracks, and performance reviews.</li>
+            <li><strong>Optimized File System:</strong> Streamlined tracking arrays to support safe asset streaming download capabilities.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sidebar-box">
+            <h3 class="sidebar-title">Tech Blueprint</h3>
+            <div class="skills-group">
+              <span class="skills-label">Core Layers</span>
+              <div class="chips">
+                <span class="chip">PHP</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Bootstrap</span>
+              </div>
+            </div>
+            <div class="action-stack">
+              <a href="https://github.com/Sheth007/INDIE-VIBES" target="_blank">View Source Code →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-left">© 2026 Uday Sheth</p>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>

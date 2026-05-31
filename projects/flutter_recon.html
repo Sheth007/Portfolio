@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Flutter Reacon — Browser Inspection Extension | Uday Sheth</title>
+    <meta
+      name="description"
+      content="An open-source browser utility designed to detect Flutter web ecosystems and inspect active packages on pub.dev."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- SEO Open Graph Tags -->
+    <meta property="og:title" content="Flutter Reacon — Browser Inspection Extension" />
+    <meta property="og:description" content="Instantly analyze Flutter web applications and inspect framework dependencies." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../assets/css/colors.css?v=0.8" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=0.8" />
+    
+    <style>
+      .project-header { padding-top: 140px; padding-bottom: 40px; }
+      .project-back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 500; margin-bottom: 24px; opacity: 0.7; transition: opacity 0.2s ease; }
+      .project-back-link:hover { opacity: 1; }
+      .project-main-title { font-size: 3.5rem; font-weight: 850; letter-spacing: -0.04em; line-height: 1.0; margin-bottom: 20px; }
+      .project-meta-strip { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 40px; }
+      .project-content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; padding-bottom: 100px; }
+      .project-body h2 { font-size: 1.8rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px; letter-spacing: -0.02em; }
+      .project-body p { font-size: 1.1rem; line-height: 1.65; margin-bottom: 20px; opacity: 0.9; }
+      .project-body ul { list-style: none; margin-bottom: 30px; }
+      .project-body ul li { position: relative; padding-left: 24px; font-size: 1.05rem; line-height: 1.6; margin-bottom: 12px; }
+      .project-body ul li::before { content: "✓"; position: absolute; left: 0; top: 0; font-weight: bold; }
+      .sidebar-box { border: 1px solid; border-radius: 16px; padding: 30px; position: sticky; top: 40px; }
+      .sidebar-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+      .action-stack { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+      .action-stack a { display: block; text-align: center; padding: 12px; border: 1px solid; border-radius: 999px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; }
+      body.scheme-midnight .sidebar-box { border-color: #3a3b3e; background: #191b1d; }
+      body.scheme-daylight .sidebar-box { border-color: #ccc; background: #eaeae0; }
+      body.scheme-midnight .project-body ul li::before { color: #c9a84c; }
+      body.scheme-daylight .project-body ul li::before { color: #a07828; }
+      @media (max-width: 768px) { .project-header { padding-top: 100px; } .project-main-title { font-size: 2.5rem; } .project-content-grid { grid-template-columns: 1fr; gap: 40px; } }
+    </style>
+  </head>
+
+  <body class="scheme-midnight">
+    <header class="top">
+      <div class="top__left">
+        <a href="../"><span class="top__brand">Uday Sheth</span></a>
+      </div>
+      <nav class="top__right">
+        <div class="nav-container" id="navContainer">
+          <div class="links">
+            <a href="../#projects" class="top__link">Work</a>
+            <a href="../#experience" class="top__link">Experience</a>
+          </div>
+          <div class="top__actions">
+            <a href="../assets/pdf/Uday-Sheth-CV.pdf" download class="top__cv-btn">📄 CV</a>
+          </div>
+        </div>
+        <button class="scheme-btn" id="schemeBtn">🌕</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </nav>
+    </header>
+
+    <section class="project-header">
+      <div class="boxed">
+        <a href="../#projects" class="project-back-link">← Back to Portfolio</a>
+        <h1 class="project-main-title">🕵 Flutter Recon</h1>
+        <div class="project-meta-strip">
+          <span class="proj-badge published">Published · Browser Extension</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="boxed project-content-grid">
+        <div class="project-body">
+          <h2>Overview</h2>
+          <p>
+            Flutter Reacon is an advanced developer utility designed to instantly identify whether websites are built using Google's Flutter web framework. Built for developers, reverse engineers, and tech stacks researchers, it unmasks framework packages in real time.
+          </p>
+          <h2>Key Highlights</h2>
+          <ul>
+            <li><strong>Automated Detection:</strong> Monitors browser tabs to identify active instances of Flutter web configurations.</li>
+            <li><strong>Dependency Diagnostics:</strong> Extracts and prints internal packages actively used by the production build.</li>
+            <li><strong>Direct Integration Links:</strong> Generates deep links matching packages directly onto pub.dev for isolated package investigation.</li>
+            <li><strong>Zero Setup Footprint:</strong> Functions in one click directly from your extension toolbar panel.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sidebar-box">
+            <h3 class="sidebar-title">Tech Specs</h3>
+            <div class="skills-group">
+              <span class="skills-label">Languages</span>
+              <div class="chips">
+                <span class="chip">JavaScript</span>
+                <span class="chip">Browser API</span>
+                <span class="chip">Dev Tools</span>
+              </div>
+            </div>
+            <div class="action-stack">
+              <a href="https://github.com/Sheth007" target="_blank">View Repository →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-left">© 2026 Uday Sheth</p>
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>
