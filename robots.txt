@@ -620,6 +620,3 @@ Allow: /
 
 # Sitemap
 Sitemap: https://udaysheth.netlify.app/sitemap.xml
-
-# Host
-Host: udaysheth.netlify.app
