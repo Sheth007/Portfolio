@@ -1,0 +1,16 @@
+# Uday Sheth
+
+> Professional profile summary for Laravel Developer, Graphic Designer, and Digital Marketer based in Rajkot, Gujarat, India.
+
+## Core Expertise
+- **Backend Development:** PHP, Laravel Framework, API Integrations.
+- **Frontend & Interaction:** Modern JavaScript, Clean Grid-mesh layouts, Ambient UI micro-interactions.
+- **Design & Marketing:** Visual Branding, Graphic Assets Creation, Social Media Ad Campaign Optimization.
+
+## Key Portfolio Experience
+- **Imbuesoft (Digital Marketing Intern):** Managed multi-channel digital ad execution, designed creative collateral for brands like Vistaderm, and expanded overall user engagement metrics.
+
+## Online Presence & Contact Details
+- **Website:** https://udaysheth.netlify.app
+- **GitHub:** https://github.com/Sheth007
+- **Email:** Shethuday505@gmail.com
