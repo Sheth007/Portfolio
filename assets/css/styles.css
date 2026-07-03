@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* zoom: 98%; */
 }
 
 html {
@@ -209,7 +210,7 @@ header.top {
     width: 100%;
     /* 🚀 CRITICAL: Force the header container ABOVE the grid-overlay (z-index: 2) */
     position: relative !important;
-    z-index: 99999 !important; 
+    z-index: 99999 !important;
   }
 
   header.top,
@@ -242,7 +243,8 @@ header.top {
 
   /* Clean up dropdown configurations to explicitly fire user gestures */
   .nav-container {
-    display: none !important; /* Hide by default */
+    display: none !important;
+    /* Hide by default */
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -253,10 +255,11 @@ header.top {
     text-align: center;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    
+
     /* 🎯 Layer it beautifully over sections & layouts */
     z-index: 100000 !important;
-    pointer-events: auto !important; /* Forces interactive allowance */
+    pointer-events: auto !important;
+    /* Forces interactive allowance */
   }
 
   /* Explicitly handle state overrides cleanly */
@@ -270,13 +273,15 @@ header.top {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    pointer-events: auto !important; /* Ensure children handle touches smoothly */
+    pointer-events: auto !important;
+    /* Ensure children handle touches smoothly */
   }
 
   .top__link,
   .top__cv-btn,
   .top__cta {
-    pointer-events: auto !important; /* Forces link clickable state inheritance */
+    pointer-events: auto !important;
+    /* Forces link clickable state inheritance */
   }
 
   .top__cv-btn {
@@ -451,16 +456,16 @@ header.top {
 
 .bio-links ul li {
   position: relative;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin-bottom: 10px;
 }
 
-.bio-links ul li::before {
+/* .bio-links ul li::before {
   content: "→";
   position: absolute;
   left: 0;
   top: 0;
-}
+} */
 
 .bio-links a {
   font-weight: 500;
@@ -1025,6 +1030,73 @@ section,
   background-size: 50px 50px;
   z-index: 2;
   transition: background-image 0.4s ease;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 620px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.contact-form .field {
+  margin-bottom: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 120%;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 1rem;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button.cta-project {
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.contact-direct {
+  flex: 1;
+  min-width: 240px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 body.scheme-midnight .grid-overlay {
