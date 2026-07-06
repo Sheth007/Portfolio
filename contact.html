@@ -77,24 +77,38 @@
 
     <section id="contact" style="padding-top: 0;">
       <div class="boxed contact-grid">
-        <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form
+          class="contact-form reveal"
+          name="contact"
+          action="index.html"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <input type="hidden" name="form-name" value="contact" />
-          <p style="display:none">
-            <label>Don't fill this out: <input name="bot-field" /></label>
+        
+          <p hidden>
+            <label>Don't fill this out:
+              <input name="bot-field" />
+            </label>
           </p>
+        
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
           </div>
+        
           <div class="field">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required />
           </div>
+        
           <div class="field">
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="cta-project">Send message →</button>
+        
+          <button type="submit">Send message →</button>
         </form>
 
         <div class="contact-direct reveal" style="transition-delay: 0.1s">
