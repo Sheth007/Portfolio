@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://udaysheth.netlify.app/sitemap.xml
