@@ -1,0 +1,32 @@
+# Uday Sheth
+
+> Professional profile summary for Laravel Developer, Graphic Designer, and Digital Marketer based in Rajkot, Gujarat, India.
+
+## Core Expertise
+- **Backend Development:** PHP, Laravel Framework, MySQL, API Integrations.
+- **Frontend & Interaction:** Modern JavaScript, Clean Grid-mesh layouts, Ambient UI micro-interactions.
+- **Automation & Tooling:** Python, Flask, browser extensions (WebExtensions API), web scraping.
+- **Design & Marketing:** Visual Branding, Graphic Assets Creation, Social Media Ad Campaign Optimization.
+
+## Site Structure
+- **Home:** https://udaysheth.netlify.app/ — overview and featured work
+- **About:** https://udaysheth.netlify.app/about.html — background, skills, education
+- **Projects:** https://udaysheth.netlify.app/projects.html — full project index
+  - Ghost Clean (Firefox extension): https://udaysheth.netlify.app/projects/ghost-clean.html
+  - Flutter Recon (browser extension): https://udaysheth.netlify.app/projects/flutter-recon.html
+  - E-Commerce Price Scraper (Python): https://udaysheth.netlify.app/projects/price-scraper.html
+  - Data Harvester (OSINT guide): https://udaysheth.netlify.app/projects/data-harvester.html
+  - Indie Vibes (PHP/MySQL music app): https://udaysheth.netlify.app/projects/indie-vibes.html
+- **Experience:** https://udaysheth.netlify.app/experience.html — professional journey
+- **Contact:** https://udaysheth.netlify.app/contact.html
+
+## Key Portfolio Experience
+- **Netclues Technologies (Laravel Developer, Apprenticeship):** Built and maintained production-level Laravel applications for international clients.
+- **Jashvi Infotech (Graphic Designer & Video Editor, Part-time):** Created social media posts and promotional reels for client brands.
+- **Imbuesoft (Digital Marketing Intern):** Managed multi-channel digital ad execution, designed creative collateral for brands like Vistaderm, and expanded overall user engagement metrics.
+
+## Online Presence & Contact Details
+- **Website:** https://udaysheth.netlify.app
+- **GitHub:** https://github.com/Sheth007
+- **LinkedIn:** https://www.linkedin.com/in/udaysheth/
+- **Email:** Shethuday505@gmail.com

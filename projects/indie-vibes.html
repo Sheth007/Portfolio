@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Indie Vibes – Full-Stack Music Streaming App | Uday Sheth</title>
+    <meta name="description" content="Indie Vibes is a full-stack music streaming web app by Uday Sheth built with PHP, MySQL and Bootstrap — sign up, browse artists, and play playlists." />
+    <meta name="author" content="Uday Sheth" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://udaysheth.netlify.app/projects/indie-vibes.html" />
+
+    <meta property="og:title" content="Indie Vibes – Full-Stack Music Streaming App" />
+    <meta property="og:description" content="A full-stack music streaming web app built with PHP, MySQL and Bootstrap. Built by Uday Sheth." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://udaysheth.netlify.app/projects/indie-vibes.html" />
+    <meta property="og:image" content="https://udaysheth.netlify.app/assets/logo/Uday.png" />
+    <meta property="og:site_name" content="Uday Sheth Portfolio" />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@UdaySheth_" />
+    <meta name="twitter:title" content="Indie Vibes – Full-Stack Music Streaming App" />
+    <meta name="twitter:description" content="A full-stack music streaming web app built with PHP, MySQL and Bootstrap." />
+    <meta name="twitter:image" content="https://udaysheth.netlify.app/assets/logo/Uday.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://udaysheth.netlify.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://udaysheth.netlify.app/projects.html" },
+        { "@type": "ListItem", "position": 3, "name": "Indie Vibes", "item": "https://udaysheth.netlify.app/projects/indie-vibes.html" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Indie Vibes",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "Web",
+      "description": "A full-stack music streaming app where users can sign up, browse artists, play songs or random playlists, and control playback.",
+      "url": "https://github.com/Sheth007/indie-vibes",
+      "author": { "@type": "Person", "name": "Uday Sheth", "url": "https://udaysheth.netlify.app/" }
+    }
+    </script>
+
+    <link rel="shortcut icon" href="../assets/logo/1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/colors.css?v=1.2" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.2" />
+    <style>
+      .case-body { max-width: 760px; }
+      .case-body h2 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; margin: 36px 0 14px; }
+      .case-body p { font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px; }
+      .case-body ul { padding-left: 20px; margin-bottom: 16px; }
+      .case-body li { font-size: 1.05rem; line-height: 1.7; margin-bottom: 6px; }
+      .breadcrumb { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; }
+      .breadcrumb a:hover { text-decoration: underline; }
+    </style>
+  </head>
+
+  <body class="scheme-daylight">
+    <div class="gradient-background"><div class="grid-overlay"></div></div>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <header class="top">
+      <div class="top__left">
+        <a href="../index.html"><span class="top__brand">Uday Sheth</span></a>
+        <img src="../assets/logo/1.png" alt="Uday Sheth Logo" width="auto" height="19"
+          style="width: auto; height: 18.5px; border-radius: 0px; margin-left: 3px;" />
+      </div>
+      <nav class="top__right" aria-label="Main navigation">
+        <div class="nav-container" id="navContainer">
+          <div class="links">
+            <a href="../about.html" class="top__link">About</a>
+            <a href="../projects.html" class="top__link">Projects</a>
+            <a href="../experience.html" class="top__link">Experience</a>
+            <a href="../contact.html" class="top__link">Contact</a>
+          </div>
+          <div class="top__actions">
+            <a href="../assets/cv/Uday Sheth.pdf" download class="top__cv-btn" aria-label="Download Uday Sheth's CV">📄 CV</a>
+          </div>
+        </div>
+        <button class="scheme-btn" id="schemeBtn" aria-label="Toggle color scheme">🌕</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </nav>
+    </header>
+
+    <section class="hero" style="padding-top: 60px; padding-bottom: 30px;">
+      <div class="boxed">
+        <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="../projects.html">Projects</a> / Indie Vibes</p>
+        <span class="eyebrow">📀 Full-Stack Web App · Open Source</span>
+        <h1 class="overview" style="font-size: 2.75rem;">Indie Vibes</h1>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="boxed">
+        <div class="proj-tags" style="margin-bottom: 30px;">
+          <span class="proj-tag">PHP</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Bootstrap</span>
+        </div>
+
+        <div class="proj-links-container" style="margin-bottom: 40px;">
+          <a href="https://github.com/Sheth007/indie-vibes" target="_blank" rel="noopener noreferrer" class="cta-project">GitHub →</a>
+        </div>
+
+        <div class="case-body">
+          <h2>What it is</h2>
+          <p>
+            Indie Vibes is a full-stack music streaming web app - users can
+            sign up, browse artists, play individual songs or generate
+            random playlists, and control playback from a persistent
+            player bar.
+          </p>
+
+          <h2>How it's built</h2>
+          <p>
+            The front end is plain HTML, CSS, and JavaScript, kept
+            framework-free to keep the player logic transparent. The
+            backend runs on PHP with a MySQL database handling users,
+            artists, tracks, and playlists. Bootstrap handles the
+            responsive layout.
+          </p>
+
+          <h2>Core features</h2>
+          <ul>
+            <li>User sign-up and accounts</li>
+            <li>Artist browsing and song playback</li>
+            <li>Random playlist generation</li>
+            <li>Track downloads</li>
+            <li>User feedback</li>
+          </ul>
+
+          <h2>Why it was built</h2>
+          <p>
+            Indie Vibes started as a way to practice tying a PHP/MySQL
+            backend to a real, stateful front-end experience playback
+            state, playlists, and user accounts all have to stay in sync,
+            which makes for a good full-stack learning project beyond
+            typical CRUD apps.
+          </p>
+
+          <h2>Where to find it</h2>
+          <ul>
+            <li>Full source code and setup instructions are on GitHub</li>
+          </ul>
+
+          <div class="bio-links" style="margin-top: 30px;">
+            <ul><li><a href="../projects.html">← Back to all projects</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-left">© 2026 Uday Sheth · Rajkot, Gujarat, India</p>
+      <p class="footer-right">
+        <a href="https://github.com/Sheth007" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:Shethuday505@gmail.com">Shethuday505@gmail.com</a>
+      </p>
+    </footer>
+
+    <script src="../assets/js/bg.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/animations.js"></script>
+  </body>
+</html>
