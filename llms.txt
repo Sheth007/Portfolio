@@ -1,32 +1,258 @@
 # Uday Sheth
 
-> Professional profile summary for Laravel Developer, Graphic Designer, and Digital Marketer based in Rajkot, Gujarat, India.
+> Portfolio and professional profile of Uday Sheth, a developer and creator based in Rajkot, Gujarat, India. The site covers software development, browser extensions, automation, digital content, and professional experience.
 
-## Core Expertise
-- **Backend Development:** PHP, Laravel Framework, MySQL, API Integrations.
-- **Frontend & Interaction:** Modern JavaScript, Clean Grid-mesh layouts, Ambient UI micro-interactions.
-- **Automation & Tooling:** Python, Flask, browser extensions (WebExtensions API), web scraping.
-- **Design & Marketing:** Visual Branding, Graphic Assets Creation, Social Media Ad Campaign Optimization.
+## About
+
+Uday Sheth is a developer and creator with a background spanning software development, digital media, design, and marketing.
+
+He builds web applications, browser extensions, automation tools, and other software projects, while also working in social media and digital content.
+
+He holds a BCA and MCA degrees and maintains a portfolio of personal and open-source projects.
 
 ## Site Structure
-- **Home:** https://udaysheth.netlify.app/ — overview and featured work
-- **About:** https://udaysheth.netlify.app/about.html — background, skills, education
-- **Projects:** https://udaysheth.netlify.app/projects.html — full project index
-  - Ghost Clean (Firefox extension): https://udaysheth.netlify.app/projects/ghost-clean.html
-  - Flutter Recon (browser extension): https://udaysheth.netlify.app/projects/flutter-recon.html
-  - E-Commerce Price Scraper (Python): https://udaysheth.netlify.app/projects/price-scraper.html
-  - Data Harvester (OSINT guide): https://udaysheth.netlify.app/projects/data-harvester.html
-  - Indie Vibes (PHP/MySQL music app): https://udaysheth.netlify.app/projects/indie-vibes.html
-- **Experience:** https://udaysheth.netlify.app/experience.html — professional journey
+
+- **Home:** https://udaysheth.netlify.app/
+  - Portfolio overview
+  - Featured projects
+  - Current professional role
+  - Introduction
+
+- **About:** https://udaysheth.netlify.app/about.html
+  - Personal background
+  - Career journey
+  - Development and creative interests
+  - Education
+  - Online profiles
+
+- **Projects:** https://udaysheth.netlify.app/projects.html
+  - Complete project index
+
+- **Experience:** https://udaysheth.netlify.app/experience.html
+  - Professional employment history
+  - Development, design, marketing, and social media experience
+
 - **Contact:** https://udaysheth.netlify.app/contact.html
+  - Contact form
+  - Email
+  - Phone
+  - Location and work availability
 
-## Key Portfolio Experience
-- **Netclues Technologies (Laravel Developer, Apprenticeship):** Built and maintained production-level Laravel applications for international clients.
-- **Jashvi Infotech (Graphic Designer & Video Editor, Part-time):** Created social media posts and promotional reels for client brands.
-- **Imbuesoft (Digital Marketing Intern):** Managed multi-channel digital ad execution, designed creative collateral for brands like Vistaderm, and expanded overall user engagement metrics.
 
-## Online Presence & Contact Details
-- **Website:** https://udaysheth.netlify.app
+## Projects
+
+### Ghost Clean
+
+- **Page:** https://udaysheth.netlify.app/projects/ghost-clean.html
+- **Repository:** https://github.com/Sheth007/Ghost-Clean
+- **Firefox Add-on:** https://addons.mozilla.org/en-US/firefox/addon/ghost-clean/
+- **Type:** Firefox browser extension
+- **Status:** Published
+
+Ghost Clean is a privacy-focused Firefox extension for managing and cleaning browser data.
+
+Features include:
+
+- Browser-wide data cleanup
+- Site-specific data cleanup
+- Cookie whitelist
+- Scheduled cleanup
+- Startup cleanup
+- History, cookies, cache, downloads, local storage, and IndexedDB cleanup
+- Local cleanup statistics
+- Dashboard for browser-data management
+
+The extension is built using Firefox WebExtensions APIs and uses local extension storage for user settings and cleanup statistics.
+
+It is designed to keep managed browsing data on the user's device and does not send browsing history, cookies, saved passwords, page contents, or other browsing activity to external telemetry services.
+
+
+### Flutter Recon
+
+- **Page:** https://udaysheth.netlify.app/projects/flutter-recon.html
+- **Repository:** https://github.com/Sheth007/flutter-recon
+- **Type:** Browser extension
+- **Status:** Open source
+
+Flutter Recon is a browser extension for detecting Flutter-powered websites and identifying publicly exposed Flutter and Dart package references.
+
+The extension:
+
+- Detects Flutter web runtime signatures
+- Inspects publicly available page assets and bundle information
+- Identifies referenced Flutter and Dart packages
+- Presents discovered packages in a browser interface
+- Links packages to their pages on pub.dev
+
+The project is intended for developer research, technology exploration, and understanding how Flutter-based websites are implemented.
+
+
+### E-Commerce Price Scraper
+
+- **Page:** https://udaysheth.netlify.app/projects/price-scraper.html
+- **Repository:** https://github.com/Sheth007/ECommerce-Price-Scraper
+- **Type:** Python scraping and price comparison tool
+- **Status:** Open source
+
+E-Commerce Price Scraper collects product listings and prices from supported e-commerce websites and presents results for comparison.
+
+The project provides:
+
+- Graphical desktop interface
+- Command-line interface
+- Flask web interface
+- Product search
+- Multi-site price comparison
+- HTML parsing with BeautifulSoup
+- Browser automation where required
+
+The project is built in Python and uses Flask, BeautifulSoup, and browser automation technologies.
+
+
+### Data Harvester
+
+- **Page:** https://udaysheth.netlify.app/projects/data-harvester.html
+- **Repository:** https://github.com/Sheth007/data-harvester
+- **Type:** OSINT research guide
+- **Status:** Open source
+
+Data Harvester is an educational guide for researching publicly available information through a structured OSINT workflow.
+
+The project focuses on:
+
+- Public information research
+- Digital footprint research
+- Cross-referencing public sources
+- Source verification
+- Structured investigation methodology
+
+The guide is intended for legitimate and educational research using publicly accessible information.
+
+
+### Indie Vibes
+
+- **Page:** https://udaysheth.netlify.app/projects/indie-vibes.html
+- **Repository:** https://github.com/Sheth007/indie-vibes
+- **Type:** Full-stack music streaming web application
+- **Status:** Open source
+
+Indie Vibes is a PHP/MySQL music streaming application with user accounts, artist browsing, track playback, playlists, downloads, and user feedback.
+
+The project includes:
+
+- User registration and accounts
+- Artist and track browsing
+- Music playback
+- Random playlist generation
+- Persistent playback controls
+- Track downloads
+- User feedback
+
+Technology used includes PHP, MySQL, JavaScript, HTML, CSS, and Bootstrap.
+
+
+## Professional Experience
+
+### TransGlobe Education
+
+- **Role:** Social Media Manager
+- **Location:** Rajkot, Gujarat, India
+- **Dates:** August 2026 – Present
+- **Work arrangement:** On-site
+
+Responsible for managing social media accounts and digital content, including content strategy, planning, creation, copywriting, branding, scheduling, engagement, and performance analysis.
+
+Also actively supports development guy including deployment, debug, troubleshooting as well minor to major bug fixing.
+
+
+### Netclues Technologies
+
+- **Role:** Laravel Developer
+- **Location:** Ahmedabad, Gujarat, India
+- **Dates:** November 2025 – June 2026
+- **Work arrangement:** On-site
+
+Worked on production-level Laravel applications for international clients as a paid apprentice.
+
+Responsibilities included working with Laravel and PHP applications, MVC architecture, MySQL, Blade templates, Git, CMS functionality, performance, maintainability, and production timelines.
+
+Client projects were subject to NDA.
+
+
+### Jashvi Infotech
+
+- **Role:** Graphic Designer & Video Editor
+- **Location:** Rajkot, Gujarat, India
+- **Dates:** July 2025 – August 2025
+- **Work arrangement:** Remote
+
+Created social media posts, promotional reels, and visual content for client brands while maintaining brand identity and supporting marketing campaigns.
+
+### Imbuesoft
+
+- **Role:** Digital Marketing Intern
+- **Location:** Rajkot, Gujarat, India
+- **Dates:** May 2023 – June 2023
+- **Work arrangement:** On-site
+
+Worked on digital marketing materials and advertising campaigns, including creative collateral and social media strategy for client brands.
+
+
+## Education
+
+- **Master of Computer Applications (MCA)**
+- **Bachelor of Computer Applications (BCA)**
+
+
+## Technology Areas
+
+The portfolio includes experience and projects involving:
+
+- PHP
+- Laravel
+- NextJs
+- React
+- MySQL
+- JavaScript
+- Python
+- Flask
+- HTML
+- CSS
+- Bootstrap
+- Browser Extensions
+- Firefox WebExtensions APIs
+- Web Scraping
+- Browser Automation
+- Git
+
+
+## Creative & Digital Work
+
+Professional and portfolio work also covers:
+
+- Social media management
+- Content strategy
+- Content creation
+- Copywriting
+- Digital marketing
+- Graphic design
+- Video editing
+- Brand identity
+- Digital advertising
+
+
+## Online Presence
+
+- **Website:** https://udaysheth.netlify.app/
 - **GitHub:** https://github.com/Sheth007
 - **LinkedIn:** https://www.linkedin.com/in/udaysheth/
 - **Email:** Shethuday505@gmail.com
+
+
+## Contact
+
+- **Location:** Rajkot, Gujarat, India
+- **Website:** https://udaysheth.netlify.app/contact.html
+- **Email:** Shethuday505@gmail.com
+
+Uday is open to relevant development, creative, social media, freelance, collaboration, and professional opportunities.

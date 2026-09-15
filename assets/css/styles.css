@@ -417,17 +417,18 @@ header.top {
   margin-bottom: 20px;
 }
 
-.skills-group {
-  margin-bottom: 24px;
-}
-
 .skills-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
   display: block;
   margin-bottom: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.skills-group {
+  margin-bottom: 28px;
 }
 
 .chips {

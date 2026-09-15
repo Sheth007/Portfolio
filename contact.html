@@ -5,41 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Contact Uday Sheth | Laravel Developer, Rajkot</title>
-    <meta name="description" content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles. Based in Rajkot, Gujarat, India." />
+    <meta
+      name="description"
+      content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles. Based in Rajkot, Gujarat, India."
+    />
     <meta name="author" content="Uday Sheth" />
     <meta name="theme-color" content="#0d0d0d" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://udaysheth.netlify.app/contact.html" />
 
     <meta property="og:title" content="Contact Uday Sheth" />
-    <meta property="og:description" content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles." />
+    <meta
+      property="og:description"
+      content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://udaysheth.netlify.app/contact.html" />
-    <meta property="og:image" content="https://udaysheth.netlify.app/assets/logo/Uday.png" />
+    <meta
+      property="og:url"
+      content="https://udaysheth.netlify.app/contact.html"
+    />
+    <meta
+      property="og:image"
+      content="https://udaysheth.netlify.app/assets/logo/Uday.png"
+    />
     <meta property="og:site_name" content="Uday Sheth Portfolio" />
     <meta property="og:locale" content="en_IN" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@UdaySheth_" />
     <meta name="twitter:title" content="Contact Uday Sheth" />
-    <meta name="twitter:description" content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles." />
-    <meta name="twitter:image" content="https://udaysheth.netlify.app/assets/logo/Uday.png" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Uday Sheth for freelance Laravel/PHP development, collaborations, or full-time roles."
+    />
+    <meta
+      name="twitter:image"
+      content="https://udaysheth.netlify.app/assets/logo/Uday.png"
+    />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://udaysheth.netlify.app/" },
-        { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://udaysheth.netlify.app/contact.html" }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://udaysheth.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://udaysheth.netlify.app/contact.html"
+          }
+        ]
+      }
     </script>
 
-    <link rel="shortcut icon" href="./assets/logo/1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo/1.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/colors.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
+
+  <!-- Contact Toast -->
+  <div
+    id="contact-toast"
+    class="contact-toast"
+    role="status"
+    aria-live="polite"
+  >
+    <div class="contact-toast__icon">✓</div>
+
+    <div class="contact-toast__content">
+      <strong>Message sent</strong>
+      <span>Thanks for reaching out. I'll get back to you soon.</span>
+    </div>
+  </div>
+
+  <style>
+    .contact-toast {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 9999;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      max-width: 360px;
+      padding: 14px 18px;
+
+      background: #111;
+      color: #fff;
+
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    .contact-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .contact-toast__icon {
+      width: 28px;
+      height: 28px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .contact-toast__content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .contact-toast__content strong {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .contact-toast__content span {
+      font-size: 13px;
+      opacity: 0.7;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      .contact-toast {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        max-width: none;
+      }
+    }
+  </style>
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+    const contactToast = document.getElementById("contact-toast");
+
+    contactForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector("button");
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch("/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(formData).toString(),
+        });
+
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+
+        // Clear the form
+        contactForm.reset();
+
+        // Show toast
+        contactToast.classList.add("show");
+
+        // Restore button
+        submitButton.disabled = false;
+        submitButton.textContent = "Send message →";
+
+        // Hide toast after 5 seconds
+        setTimeout(() => {
+          contactToast.classList.remove("show");
+        }, 5000);
+      } catch (error) {
+        console.error("Contact form error:", error);
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Send message →";
+
+        alert("Something went wrong. Please try again.");
+      }
+    });
+  </script>
 
   <body class="scheme-daylight">
     <div class="gradient-background"><div class="grid-overlay"></div></div>
@@ -48,8 +221,18 @@
     <header class="top">
       <div class="top__left">
         <a href="./index.html"><span class="top__brand">Uday Sheth</span></a>
-        <img src="./assets/logo/1.png" alt="Uday Sheth Logo" width="auto" height="19"
-          style="width: auto; height: 18.5px; border-radius: 0px; margin-left: 3px;" />
+        <img
+          src="./assets/logo/1.png"
+          alt="Uday Sheth Logo"
+          width="auto"
+          height="19"
+          style="
+            width: auto;
+            height: 18.5px;
+            border-radius: 0px;
+            margin-left: 3px;
+          "
+        />
       </div>
       <nav class="top__right" aria-label="Main navigation">
         <div class="nav-container" id="navContainer">
@@ -63,64 +246,114 @@
             <a href="./assets/cv/Uday Sheth.pdf" download class="top__cv-btn" aria-label="Download Uday Sheth's CV">📄 CV</a>
           </div> -->
         </div>
-        <button class="scheme-btn" id="schemeBtn" aria-label="Toggle color scheme">🌕</button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+        <button
+          class="scheme-btn"
+          id="schemeBtn"
+          aria-label="Toggle color scheme"
+        >
+          🌕
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          ☰
+        </button>
       </nav>
     </header>
 
-    <section class="hero" style="padding-top: 80px; padding-bottom: 40px;">
+    <section class="hero" style="padding-top: 80px; padding-bottom: 40px">
       <div class="boxed">
-        <span class="eyebrow">📬 Contact</span>
-        <h1 class="overview" style="font-size: 3rem;">Let's build something.</h1>
+        <h1 class="overview" style="font-size: 3rem">Let's build something.</h1>
+
+        <p style="max-width: 620px; margin-top: 16px">
+          Have a project, an opportunity, or just an idea you'd like to talk
+          about? Drop me a message.
+        </p>
       </div>
     </section>
 
-    <section id="contact" style="padding-top: 0;">
+    <section id="contact" style="padding-top: 0">
       <div class="boxed contact-grid">
+        <!-- Contact form -->
         <form
           class="contact-form reveal"
           name="contact"
-          action="index.html"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          id="contact-form"
         >
           <input type="hidden" name="form-name" value="contact" />
-        
+
           <p hidden>
-            <label>Don't fill this out:
+            <label>
+              Don't fill this out:
               <input name="bot-field" />
             </label>
           </p>
-        
+
           <div class="field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
           </div>
-        
+
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
           </div>
-        
+
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me what you're working on..."
+              required
+            ></textarea>
           </div>
-        
+
           <button type="submit">Send message →</button>
         </form>
 
+        <!-- Direct contact -->
         <div class="contact-direct reveal" style="transition-delay: 0.1s">
-          <h2 class="section-heading is-visible" style="opacity:1; transform:none;">Direct</h2>
-          <div class="bio-links" style="flex-direction: column; gap: 14px; margin-top: 0;">
+          <h2
+            class="section-heading is-visible"
+            style="opacity: 1; transform: none"
+          >
+            Or reach me directly
+          </h2>
+
+          <div
+            class="bio-links"
+            style="flex-direction: column; gap: 14px; margin-top: 0"
+          >
             <ul>
-              <li><a href="mailto:Shethuday505@gmail.com">Shethuday505@gmail.com</a></li>
-              <li><a href="tel:+919408753008">+91 94087 53008</a></li>
+              <li>
+                <a href="mailto:Shethuday505@gmail.com">
+                  Shethuday505@gmail.com
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:+919408753008"> +91 94087 53008 </a>
+              </li>
             </ul>
           </div>
-          <p style="margin-top: 24px; opacity: 0.8; font-size: 0.95rem;">
-            Based in Rajkot, Gujarat, India. <br> Open to remote and on-site work.
+
+          <p style="margin-top: 24px; opacity: 0.8; font-size: 0.95rem">
+            Based in Rajkot, Gujarat, India.<br />
+            Open to remote and on-site opportunities.
           </p>
         </div>
       </div>
@@ -129,7 +362,12 @@
     <footer class="site-footer">
       <p class="footer-left">© 2026 Uday Sheth · Rajkot, Gujarat, India</p>
       <p class="footer-right">
-        <a href="https://github.com/Sheth007" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a
+          href="https://github.com/Sheth007"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
         &nbsp;·&nbsp;
         <a href="mailto:Shethuday505@gmail.com">Shethuday505@gmail.com</a>
       </p>
