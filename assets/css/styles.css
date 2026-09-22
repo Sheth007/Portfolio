@@ -223,12 +223,11 @@ header.top {
     gap: 0;
   }
 
-  /* Keep your toggles accessible and cleanly placed on the far top layer */
   .scheme-btn {
     position: absolute;
     right: 55px;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
     z-index: 100005 !important;
   }
 
@@ -351,6 +350,10 @@ header.top {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.hero-description{
+  padding-top: 20px;
 }
 
 .eyebrow {
